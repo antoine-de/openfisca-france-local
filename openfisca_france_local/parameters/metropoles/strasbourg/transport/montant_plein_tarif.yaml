@@ -1,0 +1,32 @@
+description: Tarification 26_64 des transports de l'Eurométropole de Strasbourg
+metadata:
+    type: single_amount 
+    references:
+      - Délibération au Conseil de l'Eurométropole
+        de Strasbourg du vendredi 25 juin 2021
+        Numéro E-2020-1031
+brackets: 
+- threshold:
+    2021-09-01:
+      value: -1
+  amount:
+    2021-09-01: 
+      value: 5.80
+- threshold:
+    2021-09-01:
+      value: 361
+  amount:
+    2021-09-01: 
+      value: 13.40
+- threshold:
+    2021-09-01:
+      value: 567
+  amount:
+    2021-09-01: 
+      value: 25.70
+- threshold:
+    2021-09-01:
+      value: 774
+  amount:
+    2021-09-01: 
+      value: 51.80

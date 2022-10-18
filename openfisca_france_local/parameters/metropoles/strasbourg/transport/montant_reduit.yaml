@@ -1,0 +1,32 @@
+description: Tarification reduite des transports de l'Eurométropole de Strasbourg
+metadata:
+    type: single_amount 
+    references:
+      - Délibération au Conseil de l'Eurométropole
+        de Strasbourg du vendredi 25 juin 2021
+        Numéro E-2020-1031
+brackets: 
+- threshold:
+    2021-09-01:
+      value: -1
+  amount:
+    2021-09-01: 
+      value: 3.40
+- threshold:
+    2021-09-01:
+      value: 361
+  amount:
+    2021-09-01: 
+      value: 7.30
+- threshold:
+    2021-09-01:
+      value: 567
+  amount:
+    2021-09-01: 
+      value: 13.60
+- threshold:
+    2021-09-01:
+      value: 774
+  amount:
+    2021-09-01: 
+      value: 27.60

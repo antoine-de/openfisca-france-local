@@ -1,0 +1,43 @@
+- name: mineurs
+  period: 2021-10
+  input:
+    strasbourg_metropole_transport_eligibilite_georaphique: [true, true, false, false, false, false]
+    age: [12, 17, 17, 15, 15, 15]
+    taux_incapacite: [0, 0, 0, 0, 0, 0]
+    attestion_mdph: [false, false, false, false, false, false]
+    eurometropole_strasbourg_transport_quotient_familial: [1500, 0, 100, 500, 600, 800]
+  output:
+    eurometropole_strasbourg_transport_montant: [0, 0, 3.4, 7.3, 13.6, 27.6]
+
+- name: senior
+  period: 2021-10
+  input:
+    strasbourg_metropole_transport_eligibilite_georaphique: [true, true, false, false, false, false]
+    age: [65, 70, 70, 70, 70, 70]
+    taux_incapacite: [0, 0, 0, 0, 0, 0]
+    attestion_mdph: [false, false, false, false, false, false]
+    eurometropole_strasbourg_transport_quotient_familial: [1500, 0, 100, 500, 600, 800]
+  output:
+    eurometropole_strasbourg_transport_montant: [27.6, 3.4, 3.4, 7.3, 13.6, 27.6]
+
+- name: plein tarif
+  period: 2021-10
+  input:
+    strasbourg_metropole_transport_eligibilite_georaphique: [true, false, false, false, false]
+    age: [30, 30, 30, 30, 30]
+    taux_incapacite: [0, 0, 0, 0, 0]
+    attestion_mdph: [false, false, false, false, false]
+    eurometropole_strasbourg_transport_quotient_familial: [0, 100, 500, 600, 800]
+  output:
+    eurometropole_strasbourg_transport_montant: [5.8, 5.8, 13.4, 25.7, 51.8]
+
+- name: jeunes en situation de handicap
+  period: 2021-10
+  input:
+    strasbourg_metropole_transport_eligibilite_georaphique: [true, true, true, false, true]
+    age: [20, 20, 20, 20, 30]
+    taux_incapacite: [0, 0, 0, 0, 0]
+    attestion_mdph: [true, true, false, true, true]
+    eurometropole_strasbourg_transport_quotient_familial: [1000, 1000, 1000, 1000, 1000]
+  output:
+    eurometropole_strasbourg_transport_montant: [0, 0, 27.6, 27.6, 51.8]
